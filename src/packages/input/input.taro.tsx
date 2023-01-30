@@ -262,9 +262,7 @@ export const Input: FunctionComponent<
       inputRef.current.value = val
     }
     SetInputValue(val)
-    if (trigger === 'onChange') {
-      onChange && onChange(val, event)
-    }
+    onChange && onChange(val, event)
   }
 
   const handleFocus = (event: Event) => {
